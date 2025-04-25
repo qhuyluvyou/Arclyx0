@@ -8,7 +8,6 @@ sudo apt install -y openjdk-17-jdk ufw ngrok screen unzip p7zip-full neofetch bt
 curl -fsSL https://tailscale.com/install.sh | sh && \
 sudo systemctl unmask tailscaled
 sudo systemctl start tailscaled
-sudo tailscale up --auth-key=tskey-auth-kaFXNEfKbk11CNTRL-FM7vyF5S14Coye3ic8AJ3CMQEFiG6iMTA
 ngrok config add-authtoken 2vdMOMVtUzE8YQdfAsZ5c8iEIlb_3Zd7ta8rurs6UVJZgg3bh
 mkdir ~/Main
 touch ~/Main/startup.sh
