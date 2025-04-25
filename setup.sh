@@ -6,9 +6,6 @@ echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/
 sudo apt-get update
 sudo apt install -y openjdk-17-jdk ufw ngrok screen unzip p7zip-full neofetch btop wget curl git
 curl -fsSL https://tailscale.com/install.sh | sh && \
-sudo systemctl unmask tailscaled
-sudo systemctl start tailscaled
-ngrok config add-authtoken 2vdMOMVtUzE8YQdfAsZ5c8iEIlb_3Zd7ta8rurs6UVJZgg3bh
 mkdir ~/Main
 touch ~/Main/startup.sh
 echo "java -Xms8G -Xmx24G -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+UseCompressedOops -Dfile.encoding=UTF-8 -XX:+UseStringDeduplication -XX:+OptimizeStringConcat -XX:+UnlockDiagnosticVMOptions -XX:+ParallelRefProcEnabled -XX:InitiatingHeapOccupancyPercent=75 -jar ~/Server/paper.jar -o true --nogui" >> ~/Main/startup.sh
