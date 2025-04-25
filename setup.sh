@@ -14,7 +14,7 @@ mkdir ~/Main
 touch ~/Main/startup.sh
 echo "java -Xms8G -Xmx24G -XX:+UseG1GC -XX:MaxGCPauseMillis=50 -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+UseCompressedOops -Dfile.encoding=UTF-8 -XX:+UseStringDeduplication -XX:+OptimizeStringConcat -XX:+UnlockDiagnosticVMOptions -XX:+ParallelRefProcEnabled -XX:InitiatingHeapOccupancyPercent=75 -jar ~/Server/paper.jar -o true --nogui" >> ~/Main/startup.sh
 sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java
-git clone https://github.com/qhuyluvyou/Hyronic-Backup.git Server/
+git clone https://github.com/qhuyluvyou/Arclyx0.git Server/
 cp -rf ~/Main/* Server/.
 cd Server
 chmod +x ~/Server/startup.sh
