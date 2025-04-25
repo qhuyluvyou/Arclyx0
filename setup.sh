@@ -19,3 +19,4 @@ rm -rf .git
 echo "alias qhuy='bash ~/Server/startup.sh'" >> ~/.bashrc
 source ~/.bashrc
 echo "🎉 Setup complete! Now restart your terminal (or run source ~/.bashrc) and summon your mighty server with 'qhuy'"
+echo "To connect, login in tailscaled with auth key: tskey-auth-kYiBSSjdr121CNTRL-LKwUGjKqqFLAERWu6Fh8FLDbtJZcsZMj1"
